@@ -14,6 +14,9 @@ public class Main {
 
     public static void main(String[] args) {
         double salary = salaryCalculator(40, 25, 0);
-        System.out.println(salary);
+        StudentProfile studentA = new StudentProfile("Michael", "Scott", "Undeclared",
+                2.3, 1993);
+
+        System.out.println(studentA.getFullName() + " makes $" + salary + "/year");
     }
 }
